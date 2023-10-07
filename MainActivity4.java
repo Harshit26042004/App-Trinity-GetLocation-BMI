@@ -32,6 +32,8 @@ public class MainActivity4 extends AppCompatActivity{
 
         Button butt = findViewById(R.id.submitter);
 
+        Button prelog = findViewById(R.id.logy);
+
         butt.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -80,6 +82,14 @@ public class MainActivity4 extends AppCompatActivity{
             public void onClick(View view) {
                 Intent i2 = new Intent(MainActivity4.this , MainActivity2.class);
                 startActivity(i2);
+            }
+        });
+
+        prelog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent il = new Intent(MainActivity4.this , MainActivity5.class);
+                startActivity(il);
             }
         });
 
